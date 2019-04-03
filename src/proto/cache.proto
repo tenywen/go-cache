@@ -1,0 +1,13 @@
+// gate和gs的通信协议
+syntax = "proto3";
+
+package protocol;
+
+message Request {
+	string key = 1;
+}
+
+message Response {
+	bool  ok = 1;
+	bytes value = 2;
+}
